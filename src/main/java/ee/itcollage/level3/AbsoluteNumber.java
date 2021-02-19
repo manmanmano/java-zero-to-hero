@@ -4,7 +4,7 @@ public class AbsoluteNumber {
 
     //todo add tests for this class
 
-    public static int makeAbsolute(int x1){
+    public static int makeAbsolute(int x1) {
         return x1 >= 0 ? x1 : -(x1);
     }
 

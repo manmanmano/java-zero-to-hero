@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class  LargestNumbestTest {
+public class LargestNumbestTest {
 
     @Test
     public void pick_largest_of_2() {
