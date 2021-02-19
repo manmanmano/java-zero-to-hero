@@ -23,9 +23,12 @@ public class PersonGrouperTest {
         assertNull(map.get("-1"));
         Person person1 = map.get("11111");
         assertEquals("Great", person1.getFirstName());
+        assertEquals("President", person1.getLastName());
         Person person2 = map.get("22222");
         assertEquals("Donald", person2.getFirstName());
+        assertEquals("Duck", person2.getLastName());
         Person person3 = map.get("33333");
         assertEquals("Cristiano", person3.getFirstName());
+        assertEquals("Ronaldo", person3.getLastName());
     }
 }
