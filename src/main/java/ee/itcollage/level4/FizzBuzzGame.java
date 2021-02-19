@@ -17,12 +17,17 @@ public class FizzBuzzGame {
     public static void main(String[] args) {
         List<Integer> numbers = IntStream.rangeClosed(1, 100).boxed().collect(Collectors.toList());
 
-        System.out.println("Example 1");
         for (Integer number : numbers) {
             //do your logic
-            System.out.print(number);
-            System.out.print(" ");
+            if (number % 3 == 0 && number % 5 == 0) {
+                System.out.println("fizzbuzz");
+            } else if (number % 3 == 0) {
+                System.out.println("fizz");
+            } else if (number % 5 == 0) {
+                System.out.println("buzz");
+            } else {
+                System.out.println(number);
+            }
         }
-        System.out.println();
     }
 }
