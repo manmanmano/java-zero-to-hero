@@ -19,6 +19,12 @@ public class Cardgame {
     public static void main(String[] args) {
         //todo 1 fix tests
         //todo 2 simulate playing poker (buildDeck, shuffle and get 5 cards)
-
+        List<Card> cards = buildDeck();
+        List<Card> shuffleDeck = shuffle(buildDeck());
+        List<Card> hand = new ArrayList<>();
+        for (int i = 0; i < 5; i++){
+            hand.add(shuffleDeck.get(i));
+        }
+        System.out.println(hand);
     }
 }
