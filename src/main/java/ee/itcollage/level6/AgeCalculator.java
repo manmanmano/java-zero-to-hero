@@ -1,5 +1,7 @@
 package ee.itcollage.level6;
 
+
+import java.util.Date;
 import java.util.Scanner;
 
 public class AgeCalculator {
@@ -15,5 +17,16 @@ public class AgeCalculator {
         // todo if person is 18+ ask them whether they have coded java
         // todo if yes, print respect, if no, print good luck
         // todo we will use scanner only in this project, but it's a new thing you can google about a bit
+
+        Date date = new Date();
+        int currentYear = date.getYear() + 1900;
+        System.out.println("You were born in " + (currentYear - insertedInt));
+
+        if (insertedInt >= 18){
+            System.out.println("Have you ever coded in Java?");
+            String input = sc.next();
+            String output = input.equals("yes") ? "respect" : "good luck";
+        }
+
     }
 }
