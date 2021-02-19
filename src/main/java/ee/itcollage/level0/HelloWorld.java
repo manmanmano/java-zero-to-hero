@@ -4,7 +4,6 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         //todo print out hello world and then your name on the next line
-        System.out.println("Hello World!");
-        System.out.println("Mariano D'Angelo");
+        System.out.println("Hello World!\nMariano D'Angelo");
     }
 }
